@@ -18,10 +18,12 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
+	list-style-type: none;
 }
 
 /*BOX MODEL */
-div, header, footer, aside, section, article {
+nav, div, header, footer, aside, section, article {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
@@ -31,6 +33,63 @@ div, header, footer, aside, section, article {
 
 
 /* FONT */
+
+@font-face {
+    font-family: 'champagne__limousinesregular';
+    src: url('../fonts/champagne__limousines-webfont.eot');
+    src: url('../fonts/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champagne__limousines-webfont.woff') format('woff'),
+         url('../fonts/champagne__limousines-webfont.ttf') format('truetype'),
+         url('../fonts/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'champagne__limousinesitalic';
+    src: url('../fonts/champagne__limousines_italic-webfont.eot');
+    src: url('../fonts/champagne__limousines_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champagne__limousines_italic-webfont.woff') format('woff'),
+         url('../fonts/champagne__limousines_italic-webfont.ttf') format('truetype'),
+         url('../fonts/champagne__limousines_italic-webfont.svg#champagne__limousinesitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'champagne__limousinesbold';
+    src: url('../fonts/champagne__limousines_bold-webfont.eot');
+    src: url('../fonts/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champagne__limousines_bold-webfont.woff') format('woff'),
+         url('../fonts/champagne__limousines_bold-webfont.ttf') format('truetype'),
+         url('../fonts/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'champagne__limousinesBdIt';
+    src: url('../fonts/champagne__limousines_bold_italic-webfont.eot');
+    src: url('../fonts/champagne__limousines_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champagne__limousines_bold_italic-webfont.woff') format('woff'),
+         url('../fonts/champagne__limousines_bold_italic-webfont.ttf') format('truetype'),
+         url('../fonts/champagne__limousines_bold_italic-webfont.svg#champagne__limousinesBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* GENERAL */
 
@@ -46,5 +105,24 @@ div, header, footer, aside, section, article {
 	clear: both;
 }
 
+body{
+	font-family: 'champagne__limousinesregular';
+}
+
 	/* HEADER */
 
+	#header-top{
+		background-color: #242424;
+		height: 2em;
+	}
+
+	#header-top h1{
+		color: #57c5a0;
+		float: left;
+	}
+
+	#header-top ul{
+		float: right;
+		color: grey;
+		margin-left:1rem;
+	}
