@@ -35,12 +35,13 @@ nav, div, header, footer, aside, section, article {
 /* FONT */
 
 @font-face {
-    font-family: 'champagne__limousinesregular';
-    src: url('../fonts/champagne__limousines-webfont.eot');
-    src: url('../fonts/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/champagne__limousines-webfont.woff') format('woff'),
-         url('../fonts/champagne__limousines-webfont.ttf') format('truetype'),
-         url('../fonts/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+    font-family: 'allerregular';
+    src: url('../fonts/aller_rg-webfont.eot');
+    src: url('../fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_rg-webfont.woff2') format('woff2'),
+         url('../fonts/aller_rg-webfont.woff') format('woff'),
+         url('../fonts/aller_rg-webfont.ttf') format('truetype'),
+         url('../fonts/aller_rg-webfont.svg#allerregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -50,12 +51,13 @@ nav, div, header, footer, aside, section, article {
 
 
 @font-face {
-    font-family: 'champagne__limousinesitalic';
-    src: url('../fonts/champagne__limousines_italic-webfont.eot');
-    src: url('../fonts/champagne__limousines_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/champagne__limousines_italic-webfont.woff') format('woff'),
-         url('../fonts/champagne__limousines_italic-webfont.ttf') format('truetype'),
-         url('../fonts/champagne__limousines_italic-webfont.svg#champagne__limousinesitalic') format('svg');
+    font-family: 'allerbold';
+    src: url('../fonts/aller_bd-webfont.eot');
+    src: url('../fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_bd-webfont.woff2') format('woff2'),
+         url('../fonts/aller_bd-webfont.woff') format('woff'),
+         url('../fonts/aller_bd-webfont.ttf') format('truetype'),
+         url('../fonts/aller_bd-webfont.svg#allerbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -65,12 +67,13 @@ nav, div, header, footer, aside, section, article {
 
 
 @font-face {
-    font-family: 'champagne__limousinesbold';
-    src: url('../fonts/champagne__limousines_bold-webfont.eot');
-    src: url('../fonts/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/champagne__limousines_bold-webfont.woff') format('woff'),
-         url('../fonts/champagne__limousines_bold-webfont.ttf') format('truetype'),
-         url('../fonts/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
+    font-family: 'allerbold_italic';
+    src: url('../fonts/aller_bdit-webfont.eot');
+    src: url('../fonts/aller_bdit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_bdit-webfont.woff2') format('woff2'),
+         url('../fonts/aller_bdit-webfont.woff') format('woff'),
+         url('../fonts/aller_bdit-webfont.ttf') format('truetype'),
+         url('../fonts/aller_bdit-webfont.svg#allerbold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -80,12 +83,61 @@ nav, div, header, footer, aside, section, article {
 
 
 @font-face {
-    font-family: 'champagne__limousinesBdIt';
-    src: url('../fonts/champagne__limousines_bold_italic-webfont.eot');
-    src: url('../fonts/champagne__limousines_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/champagne__limousines_bold_italic-webfont.woff') format('woff'),
-         url('../fonts/champagne__limousines_bold_italic-webfont.ttf') format('truetype'),
-         url('../fonts/champagne__limousines_bold_italic-webfont.svg#champagne__limousinesBdIt') format('svg');
+    font-family: 'alleritalic';
+    src: url('../fonts/aller_it-webfont.eot');
+    src: url('../fonts/aller_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_it-webfont.woff2') format('woff2'),
+         url('../fonts/aller_it-webfont.woff') format('woff'),
+         url('../fonts/aller_it-webfont.ttf') format('truetype'),
+         url('../fonts/aller_it-webfont.svg#alleritalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aller_lightregular';
+    src: url('../fonts/aller_lt-webfont.eot');
+    src: url('../fonts/aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_lt-webfont.woff2') format('woff2'),
+         url('../fonts/aller_lt-webfont.woff') format('woff'),
+         url('../fonts/aller_lt-webfont.ttf') format('truetype'),
+         url('../fonts/aller_lt-webfont.svg#aller_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aller_lightitalic';
+    src: url('../fonts/aller_ltit-webfont.eot');
+    src: url('../fonts/aller_ltit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_ltit-webfont.woff2') format('woff2'),
+         url('../fonts/aller_ltit-webfont.woff') format('woff'),
+         url('../fonts/aller_ltit-webfont.ttf') format('truetype'),
+         url('../fonts/aller_ltit-webfont.svg#aller_lightitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aller_displayregular';
+    src: url('../fonts/allerdisplay-webfont.eot');
+    src: url('../fonts/allerdisplay-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/allerdisplay-webfont.woff2') format('woff2'),
+         url('../fonts/allerdisplay-webfont.woff') format('woff'),
+         url('../fonts/allerdisplay-webfont.ttf') format('truetype'),
+         url('../fonts/allerdisplay-webfont.svg#aller_displayregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -106,23 +158,46 @@ nav, div, header, footer, aside, section, article {
 }
 
 body{
-	font-family: 'champagne__limousinesregular';
+	font-family: 'aller_lightregular';
 }
 
 	/* HEADER */
 
-	#header-top{
+	header{
+		display: flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+	}
+
+	#logo_registrer{
 		background-color: #242424;
-		height: 2em;
+	}
+
+	#header-top{
+		padding: 0.5rem;
+		flex-direction:row;
 	}
 
 	#header-top h1{
 		color: #57c5a0;
-		float: left;
+		font-family: 'allerregular';
+		font-size: 1.5rem;
+		flex-grow:500px;
 	}
 
 	#header-top ul{
-		float: right;
 		color: grey;
 		margin-left:1rem;
+		font-size: 0.75rem;
+		flex-grow:440px;
+	}
+
+	#header-top #login{
+		border-left:0.5px grey solid;
+		border-right: 0.5px grey solid;
+	}
+
+	#header-down{
+		font-family: 'allerregular';
+		flex-direction:row;
 	}
