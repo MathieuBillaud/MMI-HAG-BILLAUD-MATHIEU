@@ -1,0 +1,4 @@
+Contraintes :
+- Utiliser GIT pour conserver un historique des modifications. Faire AU MINIMUM un commit + push à chaque séance. Essayez d'utiliser des messages de commit suffisamment explicites pour suivre l'évolution du projet via la consultation des messages de commit.
+- Utiliser AU MOINS UNE FOIS le modèle de boite flexbox au sein du projet. L'utilisation de ce modèle devra faire l'objet d'un commit spécifique, dont le message contiendra le mot clé FLEXBOX. Exemple : " FLEXBOX : application à la mise en forme du menu"
+- Optimisez votre projet en utilisant les techniques appropriées : Sprites, icon-font, minification, dimensionnement des images, etc. Pour chaque technique appliquée faire un commit spécifique indiquant clairement dans le message les mots PERFORMANCE et la méthode associées .Exemple : "Performance : dimensionnement des images" ou "Performance : utilisation d'une icon-font pour les réseaux sociaux"

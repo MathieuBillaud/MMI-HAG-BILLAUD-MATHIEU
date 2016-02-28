@@ -4,7 +4,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>INFO4</title>	
+		<title>FOOSESHOES</title>	
 		<link rel="stylesheet" media="screen" href="style/style.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
@@ -18,12 +18,10 @@
 						<div>
 							<nav id="search-bar">
 								<ul>
-									<li><i class="fa fa-search"></i></li>
+									<li><i class="fa fa-search search-boutton"></i></li>
+									<li id="login">LOGIN or REGISTRER</li>
 								</ul>
 							</nav>
-							<ul id="login">
-								<li>LOGIN or REGISTRER</li>
-							</ul>
 						</div>
 					</div>
 				</section>
@@ -37,22 +35,23 @@
 							<li>Pages</li>
 							<li>Blog</li>
 							<li>Contact</li>
+							<li id="menu-space"></li>
+							<li class="like-cart"><i class="fa fa-star-o"></i><i class="nbr-star">30</i></li>
+							<li><i class="fa fa-cart-arrow-down"></i><i class="nbr-star">0</i></li>
 						</ul>
 					</nav>
 				</div>
 			</header>
 
-			<section class="wrapper">
-				<article>
-					<img src="" alt=""></img>
-					<div>$145,99</div>
+			<section id="sec_slider">
+				<img src="img/fooseshoes.jpg" alt="fooseshoes"></img>
+				<article id="art_slider" class="wrapper">
 					<div>
-						<h1>Pink Shoes <br> 2013 Editor</h1>
+						<div id="slider_price">$145,99</div>
+						<h1>Pink Shoes <br> 2013 Collection</h1>
 						<p>Nunc non fermentum nunc. Sed ut ante <br>
 						eget leo tempor consequat sit amet eu orci. <br>
 						Donec dignissim dolor eget..</p>
-					</div>
-					<div>
 						<ul>
 							<i class="fa fa-eye"></i>
 							<i class="fa fa-star-o"></i>
@@ -62,168 +61,194 @@
 					</div>
 				</article>
 
-				<article>
+				<article id="down_slider" class="wrapper">
 					<div id="nav-bar">
-						<div id="nav-pos"></div>
+							<div id="nav-bar-1"></div>
+							<div id="nav-bar-2"></div>
+							<div id="nav-bar-3"></div>
+							<div id="nav-bar-4"></div>
+							<div id="nav-bar-5"></div>
 					</div>
-					<div class="nav-pos-div">
-						<h3>Pink Shoes</h3>
-						<p>Now at $145.99</p>
-					</div>
+					<div id="nav-pos-sec">
+						<div class="nav-pos-div-1">
+							<h3>Pink Shoes</h3>
+							<p>Now at $145.99</p>
+						</div>
 
-					<div class="nav-pos-div">
-						<h3>Anna Fiel</h3>
-						<p>Limited Edition</p>
-					</div>
+						<div class="nav-pos-div-2">
+							<h3>Anna Fiel</h3>
+							<p>Limited Edition</p>
+						</div>
 
-					<div class="nav-pos-div">
-						<h3>Prada</h3>
-						<p>Summer is comming</p>
-					</div>
+						<div class="nav-pos-div-3">
+							<h3>Prada</h3>
+							<p>Summer is comming</p>
+						</div>
 
-					<div class="nav-pos-div">
-						<h3>Casadei</h3>
-						<p>All colors avaiable</p>
-					</div>
+						<div class="nav-pos-div-4">
+							<h3>Casadei</h3>
+							<p>All colors avaiable</p>
+						</div>
 
-					<div class="nav-pos-div">
-						<h3>Mellow Yellow</h3>
-						<p>Free delivery</p>
+						<div class="nav-pos-div-5">
+							<h3>Mellow Yellow</h3>
+							<p>Free delivery</p>
+						</div>
 					</div>
 				</article>
 
 			</section>
 
-			<section class="wrapper">
-				<img src="" alt="">
-				<h1>ON SALE</h1>
+			<section id="offers_cat">
+				<article class="wrapper">
+					<div>
+						<img src="img/onsale.jpg" alt="On Sale">
+						<h1>ON SALE</h1>
+					</div>
 
-				<img src="" alt="">
-				<h1>SPECIAL OFFER</h1>
+					<div>
+						<img src="img/specialoffer.jpg" alt="Special Offers">
+						<h1>SPECIAL OFFERS</h1>
+					</div>
 
-				<img src="" alt="">
-				<h1>MUST HAVE</h1>
+					<div>
+						<img src="img/musthave.jpg" alt="Must Have">
+						<h1>MUST HAVE</h1>
+					</div>
+				</article>
 			</section>
 
-			<section class="wrapper" id="news-catalogue">
-				<h2>New arrival on FooShoes</h2>
-				<nav>Show all</nav>
+			<section id="news-catalogue">
+				<section class="wrapper">
 
-				<article>
-					<img src="" alt="">
-					<div class="price">$145.99</div>
-					<p>Even&Odd</p>
-					<ul>
-						<i class="fa fa-eye"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-share-square-o"></i>
-						<i class="fa fa-cart-arrow-down"></i>
-					</ul>
-				</article>
+					<nav class="show-all">Show all</nav>
+					<h2>New arrival on FooShoes</h2>
+					<div id="news-arrival">
+						<article>
+							<img src="img/item1.png" alt="item1">
+							<div class="price">$145.99</div>
+							<p>Even&Odd</p>
+							<ul>
+								<i class="fa fa-eye"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-share-square-o"></i>
+								<i class="fa fa-cart-arrow-down"></i>
+							</ul>
+						</article>
 
-				<article>
-					<img src="" alt="">
-					<div class="price">$145.99</div>
-					<div class="onsale">ON SALE!</div>
-					<p>Even&Odd</p>
-					<ul>
-						<i class="fa fa-eye"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-share-square-o"></i>
-						<i class="fa fa-cart-arrow-down"></i>
-					</ul>
-				</article>
+						<article>
+							<img src="img/item2.png" alt="">
+							<div class="onsale">ON SALE!</div>
+							<div class="price">$145.99</div>
+							<p>Even&Odd</p>
+							<ul>
+								<i class="fa fa-eye"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-share-square-o"></i>
+								<i class="fa fa-cart-arrow-down"></i>
+							</ul>
+						</article>
 
-				<article>
-					<img src="" alt="">
-					<div class="price">$145.99</div>
-					<p>Buffalo Decolletè</p>
-					<ul>
-						<i class="fa fa-eye"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-share-square-o"></i>
-						<i class="fa fa-cart-arrow-down"></i>
-					</ul>
-				</article>
+						<article>
+							<img src="img/item3.png" alt="">
+							<div class="price">$145.99</div>
+							<p>Buffalo Decolletè</p>
+							<ul>
+								<i class="fa fa-eye"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-share-square-o"></i>
+								<i class="fa fa-cart-arrow-down"></i>
+							</ul>
+						</article>
+					</div>
 
-				<h2>Best sellers of the month</h2>
-				<nav>Show all</nav>
+					<nav class="show-all">Show all</nav>
+					<h2>Best sellers of the month</h2>
+					<div id="best-sellers">
+						<article>
+							<img src="img/item4.png" alt="">
+							<div class="price">$145.99</div>
+							<p>Even&Odd</p>
+							<ul>
+								<i class="fa fa-eye"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-share-square-o"></i>
+								<i class="fa fa-cart-arrow-down"></i>
+							</ul>
+						</article>
 
-				<article>
-					<img src="" alt="">
-					<div class="price">$145.99</div>
-					<p>Even&Odd</p>
-					<ul>
-						<i class="fa fa-eye"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-share-square-o"></i>
-						<i class="fa fa-cart-arrow-down"></i>
-					</ul>
-				</article>
+						<article>
+							<img src="img/item5.png" alt="">
+							<div class="price">$145.99</div>
+							<p>Even&Odd</p>
+							<ul>
+								<i class="fa fa-eye"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-share-square-o"></i>
+								<i class="fa fa-cart-arrow-down"></i>
+							</ul>
+						</article>
 
-				<article>
-					<img src="" alt="">
-					<div class="price">$145.99</div>
-					<p>Even&Odd</p>
-					<ul>
-						<i class="fa fa-eye"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-share-square-o"></i>
-						<i class="fa fa-cart-arrow-down"></i>
-					</ul>
-				</article>
+						<article>
+							<img src="img/item6.png" alt="">
+							<div class="out-of-stock">OUT OF STOCK</div>
+							<div class="price">$145.99</div>
+							<p>Buffalo Decolletè</p>
+							<ul>
+								<i class="fa fa-eye"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-share-square-o"></i>
+								<i class="fa fa-cart-arrow-down"></i>
+							</ul>
+						</article>
+					</div>
 
-				<article>
-					<img src="" alt="">
-					<div class="price">$145.99</div>
-					<div class="onsale">OUT OF STOCK</div>
-					<p>Buffalo Decolletè</p>
-					<ul>
-						<i class="fa fa-eye"></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-share-square-o"></i>
-						<i class="fa fa-cart-arrow-down"></i>
-					</ul>
-				</article>
+					<hr>
+					<article id="under-cat">
+						<div id="shipping">
+							<h3>FREE SHIPPING</h3>
+							<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, </p>
+						</div>
 
-				<hr>
+						<div id="testimoniales">
+							<h3>TESTIMONIALS</h3>
+							<p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...] <br>
+		 					<span class="italique">- John Doe -</span></p>	
+						</div>
 
-				<div id="shipping">
-					<h3>FREE SHIPPING</h3>
-					<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, </p>
-				</div>
+						<div id="blog-news">
+							<h3>BLOG NEWS</h3>
+							<div>
+								<nav class="blog-date">APR 01</nav>
+								<nav>
+									<h4>Nice & Clean. The best for you blog!</h4>
+									<p>Vivamus metus turpis, bibendum vitae euismod vel</p>
+								</nav>
+							</div>
 
-				<div id="testimoniales">
-					<h3>TESTIMONIALS</h3>
-					<p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...] <br>
- 					- John Doe -</p>	
-				</div>
-
-				<div id="blog-news">
-					<h3>BLOG NEWS</h3>
-					<div class="date">APR 01</div>
-					<h4>Nice & Clean. The best for you blog!</h4>
-					<p>Vivamus metus turpis, bibendum vitae euismod vel</p>
-
-					<div class="date">APR 01</div>
-					<h4>What an Ecommerce theme!</h4>
-					<p>Vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
-				</div>
-
+							<div>
+								<nav class="blog-date">APR 01</nav>
+								<nav>
+									<h4>What an Ecommerce theme!</h4>
+									<p>Vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
+								</nav>
+							</div>
+						</div>
+					</article>
+				</section>
 			</section>
 
-			<footer class="wrapper">
-				<section id="widget">
+			<footer>
+				<section id="widget-part1" class="wrapper">
 					<div>
 						<h3>TEXT WIDGET</h3>
-						<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+						<p class="italique">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 					</div>
 					<div>
 						<h3>TWITTER WIDGET</h3>
-						<p>@ericafustero Why thank you. Your work looks awesome by the way! @treemelody <br>
-						19 days ago <br>
-						@roymarvelous You can seek a refund through TF if it is not as advertised - but it is :)<br>
-						21 days ago</p>
+						<p class="italique"><span class="comment-name">@ericafustero</span> Why thank you. Your work looks awesome by the way! <span class="comment-name">@treemelody</span> <br> <p class="comment-date italique">19 days ago</p></p>
+						<p class="italique"><span class="comment-name">@roymarvelous</span> You can seek a refund through TF if it is not as advertised - but it is :)<br>
+						<p class="comment-date italique">21 days ago</p></p>
 					</div>
 					<div>
 						<h3>FLICKR WIDGET</h3>
@@ -237,22 +262,39 @@
 				</section>
 
 				<hr>
-				<section>
-					<input type="textarea" placeholder="Enter email for newsletter">
-					<input type="button" value=">">
 
-					<img src="" alt="facebook">
-					<img src="" alt="twitter">
-					<img src="" alt="google+">
-					<img src="" alt="linkedin">
-					<img src="" alt="flickr">
+				<section id="widget-part2" class="wrapper">
+					<div id="#news-social">
+						<div id="newsletter">
+							<input id="mail-news" type="text" placeholder="Enter email for newsletter">
+							<input id="button" type="button" value=">">
+						</div>
+
+						<div id="social">
+							<ul>
+								<i class="fa fa-facebook"></i>
+								<i class="fa fa-twitter"></i>
+								<i class="fa fa-google-plus"></i>
+								<i class="fa fa-linkedin "></i>
+								<i class="fa fa-flickr"></i>
+							</ul>
+						</div>
+					</div>
 				</section>
 
-				<section>
-					<p>Copyright © Fooseshoes 2013. <br>
-					Designed by EnzoLiVolti. </p>
+				<section id="credit">
+					<div class="wrapper">
+						<p id="copyright">Copyright © Fooseshoes 2013. <br>
+						Designed by EnzoLiVolti. </p>
 
-					<p>Home / Support / Terms and Conditions / Faqs / Contact us</p>
+						<ul id="menu-credit">
+							<a href="#"><li>Home</li></a> / 
+							<a href="#"><li>Support</li></a> / 
+							<a href="#"><li>Terms and Conditions</li></a> / 
+							<a href="#"><li>Faqs</li></a> / 
+							<a href="#"><li>Contact us</li></a>
+						</ul>
+					</div>
 				</section>
 
 			</footer>

@@ -159,6 +159,16 @@ nav, div, header, footer, aside, section, article {
 
 body{
 	font-family: 'aller_lightregular';
+    cursor: default;
+    -webkit-user-select: none;
+}
+
+i{
+    color:#adadad;
+}
+
+.italique{
+    font-style: italic;
 }
 
 	/* HEADER */
@@ -166,38 +176,524 @@ body{
 	header{
 		display: flex;
 		flex-direction:column;
-		flex-wrap:wrap;
+		/*flex-wrap:wrap;*/
 	}
 
 	#logo_registrer{
 		background-color: #242424;
+        display: flex;
 	}
 
 	#header-top{
-		padding: 0.5rem;
-		flex-direction:row;
-	}
-
-	#header-top h1{
+        height: 3rem;
+        line-height: 3rem;
 		color: #57c5a0;
 		font-family: 'allerregular';
 		font-size: 1.5rem;
-		flex-grow:500px;
 	}
 
+    #header-top h1{
+        float: left;
+    }
+
 	#header-top ul{
-		color: grey;
+		color: #7e7e7e;
 		margin-left:1rem;
 		font-size: 0.75rem;
-		flex-grow:440px;
+        display: flex;
+        float: right;
 	}
 
 	#header-top #login{
-		border-left:0.5px grey solid;
-		border-right: 0.5px grey solid;
+		border-left:0.5px #7e7e7e solid;
+		border-right: 0.5px #7e7e7e solid;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align: center;
+        margin-left: 2em;
 	}
 
-	#header-down{
-		font-family: 'allerregular';
-		flex-direction:row;
-	}
+    #header-down ul{
+        display: flex;
+    }
+
+    #header-down li{
+        flex-direction:column;
+        height: 2.5em;
+        line-height: 2.5em;
+        text-align: center;
+        border-left:1px solid #eeeeee;
+        flex:2;
+    }
+
+    #header-down li:last-child{
+        border-right: 1px solid #eeeeee;
+    }
+
+    #header-top li:hover, #header-down li:hover{
+        color: #57c5a0;
+    }
+
+    .nbr-star{
+        font-size: 0.85rem;
+        background-color: #adadad;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 15%;
+        color: white;
+        font-family: 'allerregular';
+        margin-left: 5px;
+    }
+
+    .nbr-star:hover{
+        background-color: #57c5a0;
+    }
+
+    /* SECTION SLIDER */
+
+    #sec_slider{
+        background-color: #2e2e2e;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #art_slider{
+        top: 500;
+        z-index: -1;
+    }
+
+    #slider_price{
+        
+        background-color: #57c5a0;
+        line-height: 70px;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        color: white;
+        font-size: 0.85rem;
+        font-family: 'allerbold';
+    }
+
+    #art_slider h1{
+        font-size: 2.5rem;
+        margin-top: 0.25em;
+    }
+
+    #art_slider p{
+        font-size: 1.25rem;
+    }
+
+    #art_slider i{
+        background-color: white;
+        padding: 0.5em;
+        border-right: 1px solid #eeece7;
+        margin-top: 1em;
+    }
+
+    #art_slider i:hover{
+        color: #57c5a0;
+    }
+
+    #art_slider i:last-child{
+        border:none;
+    }
+
+    #down_slider{
+        padding-bottom: 2em;
+    }
+
+    #nav-bar{
+        display: flex;
+        height: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        background-color: #000000;
+        padding: 3px 8px 2.5px 8px;
+    }
+
+    #nav-bar div{
+        flex:1;
+        padding: 0px 4px 0px 4px;
+        border-right: 1px solid #2e2e2e;
+
+    }
+
+    #nav-bar div:last-child{
+        margin: 0;
+        border-right: 0;
+    }
+
+    #nav-bar div:first-child{
+        background-color: #57c5a0;
+    }
+
+    #nav-pos-sec{
+        display: flex;
+    }
+
+    #nav-pos-sec div{
+        flex:1;
+        text-align: center;
+        color: #acacac;
+    }
+
+    #nav-pos-sec div:first-child{
+        color: white;
+    }
+
+    #nav-pos-sec div:hover{
+        color: white;
+    }
+
+    #down_slider h3{
+        font-weight: bold; 
+    }
+
+    #down_slider p{
+        opacity: 0.5;
+        font-size: 0.75rem;
+    }
+
+    /* OFFERS CATEGORIE */
+
+    #offers_cat{
+        background-color: #242424;
+        padding: 2em;        
+        display: flex;
+    }
+
+    #offers_cat img{
+        max-width: 300px;
+    }
+
+    #offers_cat article{
+        display: flex;
+    }
+
+    #offers_cat div{
+        flex:1;
+        text-align: center;
+    }
+
+    #offers_cat h1{
+        background-color: #312d2b;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        color: white;
+        font-family: 'allerregular';
+    }
+
+    /* News Catalogue */
+
+    #news-catalogue{
+         background-color: #ebe7df;
+         display: flex;
+         flex-direction:column;
+         padding: 1em;
+    }
+
+    .show-all{
+        color: #bcb5a7;
+        font-size: 0.85rem;
+        font-weight: bold;
+        border: 1px solid #bcb5a7;
+        float: right;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 0.25em;
+        padding-top: 0.25em;
+    }
+
+    #news-catalogue img{
+        width: 150px;
+        height: auto;
+        background-color: white;
+        padding: 10px 50px 10px 50px;
+    }
+
+    #news-catalogue h2{
+        font-size: 1.5rem;
+        color: #242424;
+    }
+
+    #news-catalogue hr{
+        border:1px solid #bcb5a7;
+    }
+
+    #news-catalogue ul{
+        display: none;
+    }
+
+    #news-arrival p, #best-sellers p{
+        padding: 10px 10px 10px 90px;
+        background-color: white;
+        width: 150px;
+        font-weight: bold;
+    }
+
+    #news-arrival ul, #best-sellers ul{
+        padding: 10px 10px 10px 90px;
+        background-color: white;
+        width: 150px;
+    }
+
+    #news-arrival i, #best-sellers i{
+        margin-right: 15px
+    }
+
+    #news-arrival i:hover, #best-sellers i:hover{
+        color: #57c5a0;
+    }
+
+    #best-sellers, #news-arrival{
+        display: flex;
+    }
+
+    #best-sellers article, #news-arrival article{
+        flex:1;
+        margin-top: 2em;
+    }
+
+    #under-cat{
+        display: flex;
+    }
+
+    #under-cat div{
+        margin-right: 1.5rem;
+        padding-top: 1.5em;
+        padding: 1.5em;
+    }
+
+    #under-cat div:last-child{
+        margin-right:0;
+    }
+
+    #under-cat h3{
+        font-size: 1.5;
+        font-family: 'allerbold';
+        margin-bottom: 1rem;
+    }
+
+    #blog-news h4{
+        font-family: 'allerbold'
+    }
+
+    #shipping, #testimoniales{
+        flex:1;
+        background-color: #dfdbd4;
+        font-size: 0.8rem;
+    }
+
+    #blog-news{
+        flex:2;
+        background-color: #dfdbd4;
+        font-size: 0.8rem;
+    }
+
+    #blog-news div{
+        display: flex;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    #blog-news div nav:last-child{
+        margin-top: 0.25em;
+    }
+
+    .date{
+        background-color: #57c5a0;
+        line-height: 14px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        color: white;
+        font-size: 0.85rem;
+        font-family: 'allerbold';
+    }
+
+    .price{
+        background-color: #57c5a0;
+        line-height: 70px;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        color: white;
+        font-size: 0.85rem;
+        font-family: 'allerbold';
+        top: 150px;
+    }
+
+    .out-of-stock{
+        background-color: #f27e4b;
+        padding-top: 17.5px;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        color: white;
+        font-size: 0.85rem;
+        font-family: 'allerbold';
+    }
+
+    .onsale{
+        background-color: #242424;
+        line-height: 70px;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        color: white;
+        font-size: 0.85rem;
+        font-family: 'allerbold';
+    }
+
+    .blog-date{
+        background-color: #57c5a0;
+        text-align: center;
+        font-size: 0.85rem;
+        width: 40px;
+        height: 40px;
+        color: white;
+        font-family: 'allerbold';
+        padding: 7.5px 2.5px 2.5px 2.5px;
+        line-height: 0.85rem;
+        margin-right: 1em;
+    }
+
+    /* Footer */
+
+    footer{
+        background-color: #242424;
+        color: #a4a4a4;
+    }
+
+    footer section{
+        padding: 0.5rem;
+    }
+
+    footer hr{
+        color: #1c1c1c;
+        margin: none;
+        border:1px solid #1c1c1c;
+    }
+
+    #widget-part1{
+        display: flex;
+        justify-content:center;
+        align-content:center;
+        font-size: 0.8rem;
+    }
+
+    #widget-part1 div{
+        display: flex;
+        flex-direction:column;
+        flex:1;
+        margin: 2em;
+    }
+
+    #widget-part1 h3{
+        margin-bottom: 2em;
+    }
+
+    #widget-part1 p{
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+
+    .comment-name{
+        color: #57c5a0;
+    }
+
+    .comment-date{
+        margin-bottom: 0.15em;
+        font-weight: bold;
+    }
+
+    #mail-news{
+        background-color: #2e2e2e;
+        color: #a4a4a4;
+        border:0;
+        margin:0;
+        padding: 0.25em;
+        height: 1.5em;
+        width: 15em;
+        font-style: italic;
+    }
+
+    #mail-news{
+        flex:1;
+    }
+
+    #button{
+        background-color: #7d7d7d;
+        color: #242424;
+        border: 0;
+        margin: 0;
+        padding: 0.25em;
+        height: 2em;
+        font-weight: bold;
+    }
+
+    #widget-part2 #news-social{
+        display: flex;
+    }
+
+    #newsletter{
+        flex:1;
+        margin-left: 2em;
+    }
+
+    #social{
+        float: right;
+        margin-right:2em; 
+    }
+
+
+    #social ul{
+        display: flex;
+
+    }
+
+    #social i{
+        font-size: 1rem;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        background-color: #2e2e2e;
+        text-align: center;
+        margin: 0.25em;
+    }
+
+    #social i:hover{
+        color: #57c5a0;
+    }
+
+    #credit{
+        background-color: #2e2e2e;
+        padding-top: 1.5em;
+        padding-bottom: 2.5em;
+        font-size: 0.75rem;
+    }
+
+    #copyright{
+        float: left;
+        margin-top: 8px;
+    }
+
+    #menu-credit{
+        float: right;
+        line-height: 40px;
+    }
+
+    #menu-credit li{
+        display: inline
+    }
+
+    #menu-credit a{
+        color: #a4a4a4;
+    }
+
+    #menu-credit li:hover{
+        color: #57c5a0;
+    }
