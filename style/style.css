@@ -196,6 +196,8 @@ i{
         float: left;
     }
 
+    /* MENU */
+
 	#header-top ul{
 		color: #7e7e7e;
 		margin-left:1rem;
@@ -223,14 +225,24 @@ i{
         line-height: 2.5em;
         text-align: center;
         border-left:1px solid #eeeeee;
-        flex:2;
+        flex:1;
     }
 
     #header-down li:last-child{
         border-right: 1px solid #eeeeee;
     }
 
-    #header-top li:hover, #header-down li:hover{
+    #header-top li:hover, #header-top i:hover{
+        color: #57c5a0;
+    }
+
+    #header-down li:hover{
+        border-bottom: 3px solid #57c5a0;
+        color: #57c5a0;
+    }
+
+    .active{
+        border-bottom: 3px solid #57c5a0;
         color: #57c5a0;
     }
 
@@ -243,13 +255,46 @@ i{
         color: white;
         font-family: 'allerregular';
         margin-left: 5px;
+        padding: 2px;
     }
 
-    .nbr-star:hover{
+    .nbr-cart{
+        font-size: 0.85rem;
+        background-color: #adadad;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 15%;
+        color: white;
+        font-family: 'allerregular';
+        margin-left: 5px;
+        padding: 2px 6px 2px 6px;
+    }
+
+    .nbr-star:hover, .nbr-cart:hover{
         background-color: #57c5a0;
     }
 
+    .no-border-menu{
+        border-bottom: 0!important;
+    }
+
+    .no-border-menu:hover{
+        border-bottom: 0!important;
+    }
+
     /* SECTION SLIDER */
+    #nav-bar{
+        display: flex;
+        height: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        background-color: #000000;
+        padding: 3px 8px 2.5px 8px;
+        overflow: hidden;
+        position: relative;
+        flex-basis: 960px;
+    }
+
 
     #sec_slider{
         background-color: #2e2e2e;
@@ -259,9 +304,16 @@ i{
         width: 100%;
     }
 
+    #sec_slider img{
+        position: relative;
+        z-index: 1;
+    }
+
     #art_slider{
-        top: 500;
-        z-index: -1;
+        position: absolute;
+        z-index: 2;
+        top: 230px;
+        left: 750px;
     }
 
     #slider_price{
@@ -288,7 +340,6 @@ i{
     #art_slider i{
         background-color: white;
         padding: 0.5em;
-        border-right: 1px solid #eeece7;
         margin-top: 1em;
     }
 
@@ -304,14 +355,6 @@ i{
         padding-bottom: 2em;
     }
 
-    #nav-bar{
-        display: flex;
-        height: 10px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        background-color: #000000;
-        padding: 3px 8px 2.5px 8px;
-    }
 
     #nav-bar div{
         flex:1;
@@ -325,12 +368,37 @@ i{
         border-right: 0;
     }
 
-    #nav-bar div:first-child{
+    #nav-bar-1, #nav-bar-2, #nav-bar-3, #nav-bar-4, #nav-bar-5{
         background-color: #57c5a0;
+    }
+
+    #nav-bar-2{
+        position: relative;
+        left: -189px;
+    }
+
+    #nav-bar-3{
+        position: relative;
+        left: -378px;
+    }
+
+    #nav-bar-4{
+        position: relative;
+        left: -567px;
+    }
+
+    #nav-bar-5{
+        position: relative;
+        left: -756px;
+    }
+
+    #nav-pos-div-2:hover > #nav-bar-2{
+        left: 0px;
     }
 
     #nav-pos-sec{
         display: flex;
+/*        flex-wrap:wrap;*/
     }
 
     #nav-pos-sec div{
@@ -364,26 +432,42 @@ i{
         display: flex;
     }
 
-    #offers_cat img{
-        max-width: 300px;
-    }
-
     #offers_cat article{
         display: flex;
+        justify-content:center;
     }
 
     #offers_cat div{
+        display: flex;
         flex:1;
         text-align: center;
+        position: relative;
+        width: 300px;
+        height: 192.5px;
+        align-items:center;
+        justify-content:center;
     }
 
-    #offers_cat h1{
-        background-color: #312d2b;
+    #offers_cat img{
+        max-width: 300px;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #offers_cat p{
+        background-color: rgba(0,0,0,0.5);
         width: 150px;
         height: 50px;
         line-height: 50px;
         color: white;
         font-family: 'allerregular';
+        z-index: 2;
+    }
+
+    #offers_cat p:hover{
+        background-color: rgba(0,0,0,0.8);
     }
 
     /* News Catalogue */
@@ -393,6 +477,11 @@ i{
          display: flex;
          flex-direction:column;
          padding: 1em;
+    }
+
+    #news-arrival, #best-sellers{
+        position: relative;
+        margin-bottom: 5em;
     }
 
     .show-all{
@@ -408,10 +497,12 @@ i{
     }
 
     #news-catalogue img{
-        width: 150px;
+        width: 170px;
         height: auto;
         background-color: white;
         padding: 10px 50px 10px 50px;
+        position: absolute;
+        z-index: 1;
     }
 
     #news-catalogue h2{
@@ -423,21 +514,36 @@ i{
         border:1px solid #bcb5a7;
     }
 
-    #news-catalogue ul{
-        display: none;
+    .mainContainer{
+        background-color: white;
+        width: 270px;
+        height: 39px;
+        overflow: hidden;
+        cursor: default;
+        margin-top: 212px;
+        -webkit-user-select:none;
+        position: relative;
     }
 
-    #news-arrival p, #best-sellers p{
+    .firstChild{
         padding: 10px 10px 10px 90px;
         background-color: white;
-        width: 150px;
+        width: 170px;
         font-weight: bold;
+        position: absolute;
     }
 
-    #news-arrival ul, #best-sellers ul{
+    .secondChild{
         padding: 10px 10px 10px 90px;
         background-color: white;
-        width: 150px;
+        width: 170px;
+        position: absolute;
+        left: -270px;
+    }
+
+    .mainContainer:hover > .secondChild{
+        left: 0px;
+        transition: 0.4s ease-in;
     }
 
     #news-arrival i, #best-sellers i{
@@ -455,6 +561,9 @@ i{
     #best-sellers article, #news-arrival article{
         flex:1;
         margin-top: 2em;
+        width: 280px;
+        height: 210px;
+        position: relative;
     }
 
     #under-cat{
@@ -516,36 +625,46 @@ i{
 
     .price{
         background-color: #57c5a0;
-        line-height: 70px;
+        line-height: 60px;
         text-align: center;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         color: white;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         font-family: 'allerbold';
         top: 150px;
+        margin-top: 41px;
+        margin-left: 5px;
+        position: absolute;
+        z-index: 4;
     }
 
     .out-of-stock{
         background-color: #f27e4b;
-        padding-top: 17.5px;
+        padding-top: 16.5px;
         text-align: center;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         color: white;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         font-family: 'allerbold';
+        position: absolute;
+        z-index: 4;
+        margin-left: 195px;
     }
 
     .onsale{
         background-color: #242424;
-        line-height: 70px;
+        line-height: 60px;
         text-align: center;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         color: white;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         font-family: 'allerbold';
+        position: absolute;
+        z-index: 4;
+        margin-left: 195px;
     }
 
     .blog-date{
@@ -589,10 +708,28 @@ i{
         display: flex;
         flex-direction:column;
         flex:1;
-        margin: 2em;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+
+    #flickr-widget div{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-content:flex-start;
+        margin:0;
+    }
+
+    #flickr-widget img{
+        flex:1;
+        height: 45px;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
     }
 
     #widget-part1 h3{
+        font-size: 1rem;
         margin-bottom: 2em;
     }
 
@@ -635,18 +772,18 @@ i{
         font-weight: bold;
     }
 
-    #widget-part2 #news-social{
+    #news-social{
         display: flex;
     }
 
     #newsletter{
         flex:1;
         margin-left: 2em;
+        margin-top: 0.25em;
     }
 
     #social{
-        float: right;
-        margin-right:2em; 
+        margin-right:2em;
     }
 
 
@@ -696,4 +833,13 @@ i{
 
     #menu-credit li:hover{
         color: #57c5a0;
+    }
+
+
+    .nav-pos-div-1:hover h3{
+        color:red;
+    }
+
+    .nav-pos-div-1:hover ~ #nav-bar > div {
+        background-color: :red;
     }
